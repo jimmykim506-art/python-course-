@@ -1,0 +1,12 @@
+num = int(input("Please enter a number : "))
+binary = ""
+
+if num == 0:
+  binary = "0"
+else:
+  temp = num
+  while temp > 0:
+    binary = str(temp % 2) + binary
+    temp = temp // 2
+
+print("The binary representation of", num, "is", binary)
